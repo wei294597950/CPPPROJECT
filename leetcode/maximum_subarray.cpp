@@ -1,17 +1,16 @@
 #include<iostream>
 #include<algorithm>
+#include "limits.h"
 using namespace std;
 
-int main()
-{
-    //int a[]= {-2,1,-3,4,-1,2,1,-5,4};
-    int a[] = {-2,1,-3};
-    int length = sizeof(a)/sizeof(a[0]);
+class Solution {
+public:
+    int maxSubArray(vector<int>& a) {
     int sum = 0;
     int start = 0;
     int end = 0;
-    int maxsum = 0;
-    for(int i=0;i<length;i++)
+    int maxsum = INT_MIN;;
+    for(int i=0;i<a.size();i++)
     {
         sum += a[i];
 
@@ -23,22 +22,17 @@ int main()
         }
         if(sum <= 0)
         {
+            
+            maxsum = max(maxsum,sum);
             sum = 0;
+
         }
 
         
     }
-    int temp = maxsum;
-    int j = end;
-    for(;temp >0;j--)
-    {
-        temp-= a[j];
+        return maxsum;
         
     }
-    start = j+1;
-    cout<<maxsum<<endl;
-    cout<<start<<endl;
-    cout<<end<<endl;
-}
+};
 
 //最大子序列和

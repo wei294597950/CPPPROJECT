@@ -22,12 +22,10 @@ public:
                 else if(w1[i-1]==w2[j-1])
                 {
                     //当word2[i]=word2[j]: dp(i,j)=dp(i-1,j-1)+1;
-                    
-                    
+                                       
                       dp[i][j]=dp[i-1][j-1]+1;
                       maxsum = max(maxsum, dp[i][j]);
-                    
-                        
+                                           
                     //当word1[i]!=word2[j]: dp(i,j)=max(dp(i-1,j),dp(i,j-1))
                     // else
                     //     dp[i][j]=max(dp[i-1][j],dp[i][j-1]);

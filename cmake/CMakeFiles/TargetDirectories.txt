@@ -1,0 +1,6 @@
+/home/xuwei/CPPPROJECT/cmake/CMakeFiles/rebuild_cache.dir
+/home/xuwei/CPPPROJECT/cmake/CMakeFiles/edit_cache.dir
+/home/xuwei/CPPPROJECT/cmake/CMakeFiles/Demo.dir
+/home/xuwei/CPPPROJECT/cmake/math/CMakeFiles/edit_cache.dir
+/home/xuwei/CPPPROJECT/cmake/math/CMakeFiles/rebuild_cache.dir
+/home/xuwei/CPPPROJECT/cmake/math/CMakeFiles/Mathlink.dir

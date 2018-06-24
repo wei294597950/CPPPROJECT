@@ -1,0 +1,1 @@
+/usr/bin/c++   -O0 -Wall -g -ggdb  -rdynamic CMakeFiles/Demo.dir/main.cc.o  -o Demo math/libMathlink.a 

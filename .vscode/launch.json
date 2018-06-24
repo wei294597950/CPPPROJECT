@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/dict_tree_for_search/a.out",
+            "program": "${workspaceFolder}/leetcode/a.out",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

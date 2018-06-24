@@ -1,2 +1,0 @@
-/usr/bin/ar qc libMathlink.a  CMakeFiles/Mathlink.dir/power.cc.o
-/usr/bin/ranlib libMathlink.a

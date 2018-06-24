@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /home/xuwei/CPPPROJECT/cmake/CMakeFiles/install.dir
 /home/xuwei/CPPPROJECT/cmake/CMakeFiles/list_install_components.dir
 /home/xuwei/CPPPROJECT/cmake/CMakeFiles/rebuild_cache.dir
@@ -8,3 +9,9 @@
 /home/xuwei/CPPPROJECT/cmake/CMakeFiles/test.dir
 /home/xuwei/CPPPROJECT/cmake/CMakeFiles/package.dir
 /home/xuwei/CPPPROJECT/cmake/CMakeFiles/package_source.dir
+=======
+C:/Users/xuwei/CPPPROJECT/cmake/CMakeFiles/Demo.dir
+C:/Users/xuwei/CPPPROJECT/cmake/CMakeFiles/ALL_BUILD.dir
+C:/Users/xuwei/CPPPROJECT/cmake/CMakeFiles/ZERO_CHECK.dir
+C:/Users/xuwei/CPPPROJECT/cmake/math/CMakeFiles/Mathlink.dir
+>>>>>>> 6e3a3d0cd9770a57a81e3d63cd47c58170dceaec

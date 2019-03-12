@@ -5,7 +5,7 @@
             "browse": {
                 "path": [
                     "${workspaceFolder}",
-                    "/home/xuwei/CPPPROJECT/dict_tree_for_search"
+                    "/home/xuwei/CPPPROJECT/leetcode"
                 ],
                 "limitSymbolsToIncludedHeaders": true
             },
@@ -19,5 +19,5 @@
             "intelliSenseMode": "clang-x64"
         }
     ],
-    "version": 3
+    "version": 4
 }

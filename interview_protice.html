@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div
+{
+width:100px;
+height:100px;
+background:red;
+position:relative;
+animation:mymove 5s linear  2s infinite;
+-webkit-animation:mymove 5s  linear 2s    infinite; /*Safari and Chrome*/
+}
+
+@keyframes mymove
+{
+from {transform:rotate(0deg);}
+to {transform:rotate(360deg);}
+}
+
+</style>
+</head>
+<body>
+
+<p><strong>注释：</strong>Internet Explorer 9 以及更早的版本不支持 animation 属性。</p>
+
+<div></div>
+<ul>
+  <li>1</li>
+  <li>233</li>
+  <li>3</li>
+</ul>
+
+<ul class="aaa">
+<li>s</li>
+<li>s</li>
+<li>s</li>
+</ul>
+
+<ul class="bbb">
+    <li>s</li>
+    <li>s</li>
+    <li>s</li>
+    </ul>
+</body>
+<script>
+
+
+var ul = document.getElementsByTagName('ul')[0];
+
+ul.onclick = (event) =>{
+  let target = event.target || event.srcElement;
+
+  console.log(event)
+  if(target.nodeName === 'LI')
+     alert("+",target.innerHTML);
+}
+
+var ul2 = document.getElementsByClassName('aaa')[0]
+var li = ul2.getElementsByTagName('li')
+   for(let i =0;i<li.length;i++){
+     li[i].onclick = function(){
+       alert(i);
+     }
+   }
+
+var ul2 = document.getElementsByClassName('bbb')[0]
+var li = ul2.getElementsByTagName('li')
+   for(var i =0;i<li.length;i++){
+     (function(j){
+            li[i].onclick = function(){
+       alert(j);
+     }
+     })(i)
+
+   }
+// const curry = (fn, arr = []) => 
+//  fn.length === arr.length ? fn(...arr) : (...args) => curry(fn, [...arr, ...args]);
+
+
+//返回函数
+function curry (fn, arr = []) {
+    return fn.length === arr.length ? fn.apply(null, arr) : function (...args) {
+         console.log(...args)
+        return curry (fn, arr.concat(args))
+    }
+}
+
+const mycurry = (fn,arr = []) => {
+  fn.length === arr.length ? fn(...arr) : (...args) => mycurry(fn,[...arr,...args]) 
+}
+
+//将函数绑定到对象上
+//两个参数fn.bind(this,"nihao")
+Function.prototype.Mybind = function(fn){
+  var _this = this;
+  var args = [...arguments].slice(1)
+  return function(){
+    return _this.apply(fn,args.concat(...arguments))
+  }
+}
+
+
+Function.prototype.mycall = function(context){
+  context.fn = this;
+  var args = [...arguments].slice(1);
+  let result = context.fn(...args);
+
+  delete context.fn;
+  return result;
+};
+
+Function.prototype.myapply = function(context){
+  context.fn = this
+  var args = [].slice.call(arguments)[1];
+  if(arguments[1])
+    result = context.fn(...arguments[1]);
+    else
+    result = context.fn()
+  delete context.fn
+   return result;
+}
+// function curry(fn,arr = []){
+//   return fn.length === arr.length ? fn.apply(null,arr) : function(...args){
+//     return curry(fn,arr.concat(...args))
+//   }
+// }
+//call 是 [...arguments].slice[1]
+//apply 是  (...arguments[1])
+
+Function.prototype.Mbind = function(context){
+  var _this = this;
+  var args = [...arguments].slice(1)
+  return function(){
+    return _this.apply(context,args.concat(...arguments))
+  }
+}
+
+const curry = (fn,arr= [])=>{
+   
+}
+</script>
+</html>

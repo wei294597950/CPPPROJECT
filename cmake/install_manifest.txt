@@ -1,0 +1,2 @@
+/home/xuwei/CPPPROJECT/cmake/_CPack_Packages/Linux/TZ/Demo3-..1-Linux/bin/Demo
+/home/xuwei/CPPPROJECT/cmake/_CPack_Packages/Linux/TZ/Demo3-..1-Linux/include/config.h

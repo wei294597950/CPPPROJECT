@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xuwei/CPPPROJECT/cmake/config.h
+
+/home/xuwei/CPPPROJECT/cmake/main.cc
+stdio.h
+-
+stdlib.h
+-
+config.h
+/home/xuwei/CPPPROJECT/cmake/config.h
+math/power.h
+/home/xuwei/CPPPROJECT/cmake/math/power.h
+math.h
+-
+
+/home/xuwei/CPPPROJECT/cmake/math/power.h
+

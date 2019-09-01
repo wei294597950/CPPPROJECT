@@ -5,7 +5,11 @@
             "browse": {
                 "path": [
                     "${workspaceFolder}",
+<<<<<<< HEAD
                     "/home/xuwei/CPPPROJECT"
+=======
+                    "/home/xuwei/CPPPROJECT/leetcode"
+>>>>>>> 65604718a468118a9cc01d62d3e204822bf77500
                 ],
                 "limitSymbolsToIncludedHeaders": true
             },
